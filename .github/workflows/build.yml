@@ -25,7 +25,7 @@ jobs:
           export PATH="$PATH:$(pwd)/gcc-linaro-arm-none-eabi-4.8-2014.04_linux/bin"
 
           make distclean
-          make m8b_onecloud_config
+          make m8b_m201_1G_config
           make -j$(nproc)
 
       - name: Download AmlImg
