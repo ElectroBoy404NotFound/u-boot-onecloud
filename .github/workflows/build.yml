@@ -19,7 +19,7 @@ jobs:
         run: |
           curl -L -O https://redirect.armbian.com/_toolchain/gcc-linaro-arm-none-eabi-4.8-2014.04_linux.tar.xz
           tar xvf ./gcc-linaro-arm-none-eabi-4.8-2014.04_linux.tar.xz
-          curl https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases/download/arc-2014.12/arc_gnu_2014.12_prebuilt_elf32_le_linux_install.tar.gz
+          curl -L -O https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases/download/arc-2014.12/arc_gnu_2014.12_prebuilt_elf32_le_linux_install.tar.gz
           tar xvf arc_gnu_2014.12_prebuilt_elf32_le_linux_install.tar.gz
 
       - name: Build
