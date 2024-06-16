@@ -140,8 +140,8 @@ clear_loop:
 	sr 1, [r11]  //p1 level
 	mov r10,proc_irq
 	st r10, [0x48]
-	kflag 0x2 //set itr priority
-	seti
+	;kflag 0x2 //set itr priority
+	;seti
 
 	mov r11, 0xa
 	lr r11,[r11]
@@ -223,9 +223,9 @@ RESTORE_CALLER_SAVED
 	rtie
 
 enable_irq:
-	seti
+	;seti
 
 
 disable_irq:
-	clri
+	;clri
 
